@@ -1,0 +1,69 @@
+---
+import Wrapper from '../components/Wrapper.astro';
+import Layout from '../layouts/Layout.astro';
+// import { Image } from '@astrojs/image/components';
+// import petr from "../../public/petr.jpg";
+---
+
+<Layout title="Petr Kratochvíl | Ten správný parťák na Shoptet">
+	<div class="relative py-8 overflow-x-hidden">
+		<div class="bg-gradient-to-br absolute -z-10 from-lime-500 to-lime-700 -skew-y-6 sm:-skew-y-3 w-screen h-[115%] -translate-y-1/2"></div>
+		<Wrapper className={"py-12 sm:py-20 md:py-24 lg:py-28 xl:py-32 flex flex-col sm:flex-row"}>
+			<div>
+				<h1 class="text-white font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Petr Kratochvíl</h1>
+				<p class="text-lime-100 sm:text-lg lg:text-xl mt-3">“Pomůžu s nemožným”</p>
+			</div>
+			<div class="bg-gray-300 w-56 h-56 aspect-square rounded-full ml-auto sm:w-72 sm:h-72 md:w-96 md:h-96 xl:w-[512px] xl:h-[512px] translate-x-10 sm:translate-x-0 overflow-hidden shadow-xl shadow-gray-800/[0.3]">
+				<!-- <Image src={"../assets/petr.jpg"} alt="Petr Kratochvíl" loading="eager" class="w-full h-full object-cover" /> -->
+				<img src="petr.jpg" alt="Petr Kratochvíl" loading="eager" class="w-full h-full object-cover">
+			</div>
+		</Wrapper>
+	</div>
+
+	<Wrapper className={"grid lg:grid-cols-5 gap-10 md:gap-16 xl:gap-20 pb-52 sm:-translate-y-16"}>
+		<div class="col-span-1 flex flex-col gap-16 lg:col-span-3">
+			<div class="flex flex-col gap-8">
+				<h2 class="text-gray-800 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+					Ten správný parťák na Shoptet.
+				</h2>
+				<p>Navrhuji optimální strukturu webu, pomůžu s nastavením a vytvořením stránek tak, aby se zákazník neztratil a mnoho dalšího.</p>
+				<p>Nikdo neví vše, a proto úzce spolupracuji s <a href="https://reveal.cz" target="_blank" rel="noopenner noreferrer" class="text-lime-600 hover:text-lime-500 transition-color duration-200">reveal.cz.</a></p>
+			</div>
+			<div>
+				<h2 class="text-gray-800 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+					Reference
+				</h2>
+				<div class="grid grid-cols-2 gap-5 sm:gap-8 mt-8">
+					<a href="https://www.erpi-domov.cz" target="_blank" rel="noopenner noreferrer" class="px-5 py-2.5 text-lg text-lime-700 bg-lime-100 hover:bg-lime-300 transition duration-200 rounded-xl font-bold">Erpi-domov.cz</a>
+					<a href="https://www.sovnaran.cz" target="_blank" rel="noopenner noreferrer" class="px-5 py-2.5 text-lg text-lime-700 bg-lime-100 hover:bg-lime-300 transition duration-200 rounded-xl font-bold">Sovnaran.cz</a>
+					<a href="http://kozackymed.cz" target="_blank" rel="noopenner noreferrer" class="px-5 py-2.5 text-lg text-lime-700 bg-lime-100 hover:bg-lime-300 transition duration-200 rounded-xl font-bold">Kozackymed.cz</a>
+					<a href="https://zpservis.cz" target="_blank" rel="noopenner noreferrer" class="px-5 py-2.5 text-lg text-lime-700 bg-lime-100 hover:bg-lime-300 transition duration-200 rounded-xl font-bold">Zpservis.cz</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-1 bg-white shadow-2xl shadow-gray-800/[0.2] rounded-xl p-7 sm:p-10 lg:col-span-2 self-start">
+			<h2 class="text-gray-800 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+				Kontakt
+			</h2>
+			<div class="flex flex-col gap-3 mt-8">
+				<div class="flex gap-3 items-center">
+					<div class="p-3 bg-lime-500 text-white rounded-full">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+							<path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					<a href="tel:+420723943976" class="font-bold text-gray-800 transition-colors duration-200 hover:text-gray-600">+420 723 943 976</a>
+				</div>
+				<div class="flex gap-3 items-center">
+					<div class="p-3 bg-lime-500 text-white rounded-full">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+							<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+							<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+						  </svg>
+					</div>
+					<a href="mailto:petr.kratochvil98@gmail.com" class="font-bold text-gray-800 transition-colors duration-200 hover:text-gray-600">petr.kratochvil98@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</Wrapper>
+</Layout>
